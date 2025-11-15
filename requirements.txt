@@ -1,0 +1,16 @@
+# iyf.tv 爬虫依赖包
+
+# Web 框架
+Flask==3.0.0
+flask-cors==4.0.0
+
+# HTTP 请求
+requests==2.31.0
+cloudscraper==1.2.71  # 绕过 Cloudflare 保护
+
+# HTML 解析
+beautifulsoup4==4.12.2
+lxml==4.9.3
+
+# 其他工具
+python-dateutil==2.8.2
