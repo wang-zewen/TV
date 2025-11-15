@@ -1,0 +1,40 @@
+# iyf.tv 爬虫依赖包 - 终极版
+# 根据你的测试结果选择安装
+
+# ==== 基础依赖（必须） ====
+Flask==3.0.0
+flask-cors==4.0.0
+requests==2.31.0
+beautifulsoup4==4.12.2
+lxml==4.9.3
+python-dateutil==2.8.2
+
+# ==== 方案 1: cloudscraper（推荐，适合 Cloudflare） ====
+cloudscraper==1.2.71
+
+# ==== 方案 2: curl_cffi（最强，但可能安装困难） ====
+# curl_cffi==0.6.2
+# 注意: 某些系统可能安装失败，如果失败请注释掉这行
+
+# ==== 方案 3: Playwright（终极方案，真实浏览器） ====
+# playwright==1.40.0
+# 安装后还需要运行: playwright install chromium
+
+# ==== 安装说明 ====
+#
+# 1. 基础安装（不确定哪个方案时）:
+#    pip install -r requirements_ultimate.txt
+#
+# 2. 只安装基础 + cloudscraper:
+#    pip install Flask flask-cors requests beautifulsoup4 lxml cloudscraper
+#
+# 3. 安装 curl_cffi（如果 cloudscraper 不够）:
+#    pip install curl_cffi
+#
+# 4. 安装 Playwright（终极方案）:
+#    pip install playwright
+#    playwright install chromium
+#
+# 推荐流程:
+# - 先运行 python3 diagnose.py 诊断
+# - 根据诊断结果选择合适的方案安装
